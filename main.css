@@ -1,0 +1,42 @@
+/*
+** BACKGROUND
+*/
+
+body {
+  min-height: calc(100vh - 64px);
+  padding: 32px;
+  background-color: #08AEEA;
+  background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 42px;
+  color: white;
+  font-family: 'Lobster', cursive;
+}
+
+h1 {
+  font-size: 82px;
+  margin: 0;
+}
+
+/*
+** TUTO
+*/
+
+.loader {
+  stroke-dasharray: 39.242px;
+  stroke-dashoffset: 390.242px;
+  animation-name: waves;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes waves {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
